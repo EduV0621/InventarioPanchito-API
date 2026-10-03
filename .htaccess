@@ -1,0 +1,7 @@
+# Permite que Apache le pase a productos.php la parte "/{id}" de la URL
+# (ej: productos.php/3f9a...) como $_SERVER['PATH_INFO'], que es lo que usa
+# productos.php para saber a qué producto te refieres en GET/PUT/DELETE.
+AcceptPathInfo On
+
+# Evita que XAMPP muestre "Forbidden" al listar la carpeta por accidente.
+Options -Indexes
